@@ -4,7 +4,7 @@ def do_connect():
     wlan.active(True)
     if not wlan.isconnected():
         print('Connessione al server DHCP in corso...')
-        wlan.connect('hotSpotCasta', 'filippino')
+        wlan.connect('nomeSSID', 'pwdSSID')
         while not wlan.isconnected():
             pass
     print('Configurazione ottenuta dal derver DHCP:', wlan.ifconfig())
